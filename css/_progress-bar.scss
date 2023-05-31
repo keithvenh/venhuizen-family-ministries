@@ -1,0 +1,88 @@
+@import 'variables';
+
+#progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $dark-blue;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 9999;
+}
+
+.progress-wrap {
+  width: 60%; // Adjust to the width you desire
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+  flex-grow: 1;
+  height: 50px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 50px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: $dark-blue;
+  position: absolute;
+  padding: 0 10px;
+  font-size: 0.8em;
+  top: 0;
+  left: 0;
+  line-height: 50px;
+}
+
+#donate-button {
+  background-color: $gold;
+  color: $dark-blue;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-color: darken($gold, 10%);
+  }
+}
+
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Set the size */
+  width: 100%;
+  height: 20px;
+}
+
+progress[value]::-webkit-progress-bar {
+  /* Define the appearance of the progress bar (background) in Chrome, Safari, and Opera */
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  height: 50px;
+}
+
+progress[value]::-webkit-progress-value {
+  /* Define the appearance of the progress bar value (the filled part) in Chrome, Safari, and Opera */
+  background-color: $gold;
+  border-radius: 10px;
+}
+
+progress[value]::-moz-progress-bar {
+  /* Define the appearance of the progress bar value (the filled part) in Firefox */
+  background-color: $gold;
+  border-radius: 10px;
+}

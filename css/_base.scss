@@ -1,0 +1,26 @@
+body {
+    font-family: $font-lato;
+    color: $primary-blue;
+    margin-bottom: 80px;  // adjust this based on the height of your progress container
+  }
+
+h1, h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: $primary-blue;
+  font-weight: 300;
+}
+  
+* {
+  box-sizing: border-box;
+}
