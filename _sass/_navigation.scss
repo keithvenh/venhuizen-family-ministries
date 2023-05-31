@@ -2,66 +2,57 @@
 
 #navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 24px;
     background-color: $primary-blue;
     color: $white;
+    flex-direction: column;
     
     a {
       color: $white;
       text-decoration: none;
+      &:hover {
+        color: $gold;
+        cursor: pointer;
+      }
     }
   }
 
-  #logo {
+#logo {
+  letter-spacing: 2px;
+  font-size: 24px;
+  font-family: $font-logo;
+  font-weight: 300;
+  text-align: center;
+  span {
+    font-weight: 500;
+  }
+}
+
+#nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  
+  li {
+    display: inline;
+    text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 24px;
-    font-family: $font-logo;
-    font-weight: 300;
-    span {
-      font-weight: 500;
-    }
+    font-size: 0.8em;
+    line-height: 24px;
   }
-  
+}
+
+// ===== DESKTOP STYLES ===== //
+@media screen and (min-width: $tablet) {
+  #navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   #nav-links {
-    list-style: none;
-    display: flex;
-    gap: 24px;
-    
-    li {
-      display: inline;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 0.8em;
-      line-height: 24px;
-    }
+    margin-top: 0;
   }
-  
-  #mobile-menu-button {
-    display: none;
-    font-size: 2em;
-    background: none;
-    border: none;
-    color: $white;
-  }
-  
-  @media (max-width: $tablet) {
-    #nav-links {
-      display: none;
-    }
-  
-    #mobile-menu-button {
-      display: block;
-    }
-  }
-  
-  @media (min-width: $tablet + 1) {
-    #nav-links {
-      display: flex;
-    }
-  
-    #mobile-menu-button {
-      display: none;
-    }
-  }
-  
+}
