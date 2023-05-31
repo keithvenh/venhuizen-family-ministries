@@ -17,7 +17,7 @@ title: Home
     <p>Central to our mission of bringing individuals closer to God through His Word is the strength and unity of our own family. As we plan for our family's growth, particularly with our hearts set on foster care and adoption, the need for a reliable and spacious family vehicle has become clear. This is why we're raising $15,000 to purchase a new family minivan. Not only will this vehicle accommodate our growing family, but it will also allow us to maintain a healthy work-life balance, support our mission-related travel needs, and provide a welcoming and safe transportation for any children we are blessed to welcome into our home. Your support in helping us meet this goal plays a direct role in strengthening our family and extending our mission.</p>
   </div>
   <div class="info-image">
-    <img src="images/minivan.jpg" alt="A white minivan">
+    <img src="images/minivan-01.jpg" alt="A white minivan">
   </div>
 </section>
 
