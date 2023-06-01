@@ -18,7 +18,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 20px;
   position: relative;
   height: 50px;
 }
@@ -30,7 +29,7 @@
 
 .progress-info {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   position: absolute;
   padding: 0 10px;
@@ -43,7 +42,7 @@
     display: none;
   }
 
-  #donor-count {
+  .donor-count {
     display: none;
   }
 }
@@ -55,6 +54,7 @@
   padding: 10px 20px;
   cursor: pointer;
   text-decoration: none;
+  margin-left: 20px;
 
   &:hover {
     background-color: darken($gold, 10%);
@@ -97,11 +97,11 @@ progress[value]::-moz-progress-bar {
   .progress-info {
     justify-content: space-between;
 
-    #progress-title {
+    .progress-title {
       display: inline-block;
     }
 
-    #donor-count {
+    .donor-count {
       display: inline-block;
     }
   }

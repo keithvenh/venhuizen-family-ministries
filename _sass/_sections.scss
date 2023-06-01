@@ -55,6 +55,13 @@
   margin: 40px;
 }
 
+.page-subtitle {
+  text-align: center;
+  margin-top: -20px;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
 hr {
   border: none;
   height: 2px;
@@ -62,12 +69,18 @@ hr {
   background: $primary-blue;
   margin: auto;
   margin-top: -20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   width: 50%;
 }
 
+.introduction {
+  padding: 0 20px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
 // Grey Background Sections
-#description, #work, #family {
+#description, #work, #family, #budget, #monthly {
   background-color: $light-grey;
 }
 
@@ -200,6 +213,10 @@ hr {
 
   hr {
     width: 25%;
+  }
+
+  .introduction {
+    padding: 0 40px;
   }
 
   // DONATE SECTION ON A DESKTOP //
