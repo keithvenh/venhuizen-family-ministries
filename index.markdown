@@ -32,24 +32,3 @@ title: Home
     <p>Your contribution towards our minivan is not just about helping us acquire a vehicle. It's about enabling us to continue our mission seamlessly as we transition back to the mainland. The minivan is more than just a vehicle. It is our means to access essential services, to be a part of the community, and most importantly, to keep us focused on our mission. Each trip to the grocery store, each drive to a doctor's appointment, each journey to engage with the community is made possible because of your generosity. Your support keeps us moving, literally and figuratively. Thank you!</p>
   </div>
 </section>
-
-<section id="donate" class="info-section">
-  <div class="info-content">
-    <h2>How to Donate</h2>
-    <p>Donating to support our mission is quick, easy, and secure. Your donation directly supports our mission and helps us continue our work. You can make a one-time donation for the minivan or set up a recurring donation for ongoing support.</p>
-  </div>
-  <div id="donation-options">
-    <div class="donation-option">
-      <h3>Donate with Venmo</h3>
-      <a href="https://account.venmo.com/u/keithvenh" target="_blank" rel="noopener noreferrer"><img src="images/venmo.jpg" alt="Venmo QR Code" /></a>
-    </div>
-    <div class="donation-option">
-      <h3>Donate with Paypal & YWAM</h3>
-      <a href="https://ywamkona.my.site.com/staff/s/donate?id=6752" target="_blank" ><img src="images/paypal.jpg" alt="Paypal"></a>
-    </div>
-    <div class="donation-option">
-      <h3>Donate with CashApp</h3>
-      <a href="https://cash.app/$keithvenh" target="_blank" rel="noopener noreferrer"><img src="images/cashapp.jpg" alt="CashApp QR Code"></a>
-    </div>
-  </div> 
-</section>

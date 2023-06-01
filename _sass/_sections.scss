@@ -9,17 +9,65 @@
   .info-content {
     margin-bottom: 20px;
     text-align: justify;
+    p {
+      margin: 10px 0;
+      margin-bottom: 20px;
+    }
+
+    .info-subcontent {
+      .info-subcontent-section {
+        margin-bottom: 20px;
+        .section-icon {
+          font-size: 4em;
+          float: left;
+          margin-right: 20px;
+          margin-bottom: 10px;
+        }
+        h3 {
+          font-size: 1.25em;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          margin: 0;
+          padding: 0;
+          text-indent: 0;
+        }
+      }
+    }
   }
 
   .info-image {
+    display: flex;
+    justify-content: center;
     img {
       max-width: 100%;
+    }
+    iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
     }
   }
 }
 
+.page-title {
+  text-align: center;
+  font-size: 3em;
+  margin: 40px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  position: relative;
+  background: $primary-blue;
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
 // Grey Background Sections
-#description {
+#description, #work, #family {
   background-color: $light-grey;
 }
 
@@ -112,6 +160,31 @@
     .info-content {
       flex: 1;
       padding: 20px;
+      .info-subcontent {
+        display: flex;
+        justify-content: space-between;
+  
+        .info-subcontent-section {
+          display: flex;
+          flex-direction: column;
+          flex: 0 0 32%;
+          background-color: $light-grey;
+          padding: 20px;
+          h3 {
+            order: 1;
+            text-align: center;
+          }
+          .section-icon {
+            order: 2;
+            text-align: center;
+            float: none;
+            margin: 10px;
+          }
+          p {
+            order: 3;
+          }
+        }
+      }
     }
     .info-image {
       flex-shrink: 0;
@@ -125,7 +198,11 @@
     }
   }
 
-  // ===== DONATE SECTION ON A DESKTOP ===== //
+  hr {
+    width: 25%;
+  }
+
+  // DONATE SECTION ON A DESKTOP //
   #donate {
 
     .info-section {
@@ -143,10 +220,22 @@
     }
   }
 
-  // ===== CONTACT FORM ON DESKTOP ===== //
+  // CONTACT FORM ON DESKTOP //
 
   #contact-form {
     max-width: 500px;
+  }
+
+  // OUR WORK SECTION //
+  #work {
+    .info-image {
+      max-width: 50%;
+      flex: 1;
+    }
+    .info-content {
+        order: 2;
+        max-width: 50%;
+    }
   }
 }
 
@@ -407,4 +496,3 @@
 //       }
 //     }
 //   }
-  
