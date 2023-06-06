@@ -6,8 +6,8 @@ const donorCount = document.querySelector("#donor-count");
 // define current and total amounts
 let currentAmount = 0;
 let totalAmount = 15000;
-let targetAmount = 2050;
-let donors = 5;
+let targetAmount = 5200;
+let donors = 7;
 
 // Start animation on page load
 window.addEventListener('load', function() {
