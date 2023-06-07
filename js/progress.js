@@ -4,10 +4,13 @@ const progressText = document.querySelector("#progress-text");
 const donorCount = document.querySelector("#donor-count");
 
 // define current and total amounts
+let givers = ['aqualm', 'shindley', 'mbacon', 'ljones', 'rcollins', 
+                'sbrocka', 'lsprenkle', 'swalkup', 'other']
+let gifts = [1000, 100, 200, 150, 2000, 3000, 2000, 500, 250]
+const targetAmount = gifts.reduce((partialSum, a) => partialSum + a, 0);
 let currentAmount = 0;
 let totalAmount = 15000;
-let targetAmount = 5200;
-let donors = 7;
+let donors = gifts.length;
 
 // Start animation on page load
 window.addEventListener('load', function() {
@@ -17,7 +20,7 @@ window.addEventListener('load', function() {
 // Animation function
 function animateProgress() {
     if(currentAmount < targetAmount) {
-        currentAmount += 25; // Change this value to control animation speed
+        currentAmount += 100; // Change this value to control animation speed
         requestAnimationFrame(animateProgress);
     }
     // update progress bar value and text
