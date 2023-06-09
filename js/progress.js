@@ -5,11 +5,12 @@ const donorCount = document.querySelector("#donor-count");
 
 // define current and total amounts
 let givers = ['aqualm', 'shindley', 'mbacon', 'ljones', 'rcollins', 
-                'sbrocka', 'lsprenkle', 'swalkup', 'other', 'rcrandall']
-let gifts = [1000, 100, 200, 150, 2000, 3000, 2000, 500, 250, 500]
+                'sbrocka', 'lsprenkle', 'swalkup', 'other', 'rcrandall',
+                'hammitt', 'central']
+let gifts = [1000, 100, 200, 150, 2000, 3000, 2000, 500, 250, 500, 5000, 1300]
 const targetAmount = gifts.reduce((partialSum, a) => partialSum + a, 0);
 let currentAmount = 0;
-let totalAmount = 15000;
+let totalAmount = 16000;
 let donors = gifts.length;
 
 // Start animation on page load

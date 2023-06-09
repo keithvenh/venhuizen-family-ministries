@@ -3,7 +3,8 @@
 #navbar {
     display: flex;
     justify-content: center;
-    padding: 24px;
+    align-items: center;
+    padding: 14px 24px;
     background-color: $primary-blue;
     color: $white;
     flex-direction: column;
