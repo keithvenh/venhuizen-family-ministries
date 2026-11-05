@@ -1,0 +1,194 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Check Your Inbox</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&family=Karla:wght@400;500;700&display=swap">
+<style>
+  /* Layout: one centered column. A facsimile inbox row is the focal element, so
+     recognition happens before reading — the visitor matches it against their screen. */
+  :root {
+    --ground: #424A6B;
+    --panel: #4C5577;
+    --panel-edge: rgba(255, 255, 255, 0.16);
+    --ink: #FFFFFF;
+    --ink-soft: #C6CBE1;
+    --ink-faint: #9AA1BE;
+    --accent: #F9C65E;
+    --display: 'Outfit', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --body: 'Karla', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1rem;
+    line-height: 1.6;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: clamp(2.5rem, 9vh, 5.5rem);
+  }
+
+  main {
+    width: 100%;
+    max-width: 33rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .mark {
+    color: var(--accent);
+    display: block;
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(2rem, 6vw, 2.75rem);
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    color: var(--accent);
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .lead {
+    font-size: clamp(1.0625rem, 2.6vw, 1.1875rem);
+    margin: 0;
+    max-width: 30rem;
+  }
+
+  .cue {
+    font-family: var(--display);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 0.75rem;
+  }
+
+  /* Facsimile of the confirmation email as it appears in an inbox list */
+  .row {
+    display: flex;
+    gap: 0.875rem;
+    align-items: flex-start;
+    background: var(--panel);
+    border: 1px solid var(--panel-edge);
+    border-radius: 12px;
+    padding: 1rem 1.125rem;
+  }
+
+  .avatar {
+    flex: none;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #3A4160;
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.0625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row-text {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1875rem;
+  }
+
+  .from {
+    font-weight: 700;
+    font-size: 0.9375rem;
+    line-height: 1.35;
+  }
+
+  .subject {
+    font-size: 0.9375rem;
+    line-height: 1.35;
+  }
+
+  .preview {
+    font-size: 0.875rem;
+    line-height: 1.35;
+    color: var(--ink-faint);
+  }
+
+  .notes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: var(--ink-soft);
+    font-size: 0.9375rem;
+  }
+
+  .notes li {
+    padding-left: 1.125rem;
+    position: relative;
+  }
+
+  .notes li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6875em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .sign {
+    border-top: 1px solid var(--panel-edge);
+    padding-top: 1.25rem;
+    margin: 0;
+    color: var(--ink-faint);
+    font-size: 0.9375rem;
+  }
+</style>
+
+<main>
+  <svg class="mark" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+    <rect x="3.5" y="8.5" width="33" height="23" rx="3.5" stroke="currentColor" stroke-width="2"></rect>
+    <path d="M4.5 11 L20 22 L35.5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </svg>
+
+  <div>
+    <h1>Almost there</h1>
+    <p class="lead">We just sent you an email. Click the button inside it and you're on the list.</p>
+  </div>
+
+  <div>
+    <p class="cue">Look for this</p>
+    <div class="row">
+      <div class="avatar" aria-hidden="true">V</div>
+      <div class="row-text">
+        <span class="from">The VenHuizens</span>
+        <span class="subject">The VenHuizens here — one click to get our updates</span>
+        <span class="preview">Confirm below and you're on the list.</span>
+      </div>
+    </div>
+  </div>
+
+  <ul class="notes">
+    <li>It should arrive within a minute or two.</li>
+    <li>If it isn't there, check your spam or promotions folder — and mark it "not spam" so our updates reach you later.</li>
+    <li>Until you click, you won't hear from us. That's on purpose.</li>
+  </ul>
+
+  <p class="sign">Thanks for making room for us in your inbox. We'll write about once a month.</p>
+</main>
+
+</body></html>
